@@ -85,3 +85,25 @@ function div() {
 }
 
 console.log(div());
+
+//Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+function sumSqofNums() {
+  let sum = 0;
+  for (let i = 0; i <= 100; i++) {
+    sum += i * i;
+  }
+  return sum;
+}
+
+function sqOfSumOfNums() {
+  let sum = 0;
+  for (let i = 0; i <= 100; i++) {
+    sum += i;
+  }
+  const sqSum = sum * sum;
+  return sqSum;
+}
+
+function findDiff() {
+  return sqOfSumOfNums() - sumSqofNums();
+}
